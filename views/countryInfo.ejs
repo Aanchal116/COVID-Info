@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country-Info</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Goggle Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #DDFFBC;
+        }
+
+        h1 {
+            padding-top: 3%;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #99F3BD;
+        }
+
+        .flagImg {
+            padding: 3% 0;
+        }
+
+        .table {
+            width: 60% !important;
+            text-align: center;
+            margin: auto;
+            border-color: #FFEFA1;
+            background-color: white;
+        }
+        .buttonClick {
+            padding: 3% 0;
+        }
+    </style>
+
+
+</head>
+<body class="text-center">
+
+    <!-- Country Name -->
+
+    <h1>Country : <%= country %></h1>
+
+    <!-- Country Flag -->
+
+    <div class="flagImg">
+        <img src="<%= flagUrl %>" alt="">
+    </div>
+    
+    <!-- Info Table -->
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead>
+            <th>Information</th>
+            <th>Value</th>
+        </thead>
+        <tr>
+            <td>
+                Total Cases : 
+            </td>
+            <td>
+                <%= totalCases %> 
+            </td>
+        </tr>
+
+        <tr>
+            <td> New Cases Today :  </td> 
+            <td> <%= todayCases %> </td>
+        </tr>
+
+        <tr>
+            <td>Total Deaths :  </td> 
+            <td> <%= deaths %>  </td>
+        </tr>
+
+        <tr>
+            <td>Deaths Today :  </td>
+            <td> <%= todayDeaths %> </td>
+        </tr>
+
+        <tr>
+            <td>Total Recovered :  </td> 
+            <td> <%=recovered  %>   </td>
+        </tr>
+
+        <tr>
+            <td> Recovered Today :  </td>
+            <td> <%=todayRecovered  %>   </td>
+        </tr>
+
+        <tr>
+            <td>Active Cases :  </td> 
+            <td> <%= active %> </td>
+        </tr>
+
+        <tr>
+            <td>Total Critcal :  </td> 
+            <td> <%= critical %>   </td>
+        </tr>
+        
+        <tr>
+            <td>Total Tests :  </td> 
+            <td><%= tests %>   </td>
+        </tr>
+
+        <tr>
+            <td>Total Tests-Per-One-Million :  </td> 
+            <td> <%= testsPerOneMillion %>   </td>
+        </tr>
+
+        <tr>
+            <td>Total Cases-Per-One-Million :  </td> 
+            <td> <%= casesPerOneMillion %>  </td>
+        </tr>
+
+        <tr>
+            <td>Total Deaths-Per-One-Million :  </td> 
+            <td> <%= deathsPerOneMillion %>   </td>
+        </tr>
+
+        <tr>
+            <td>Total One-Death-Per-Person :  </td> 
+            <td> <%= oneDeathPerPeople %>  </td>
+        </tr>
+
+        <tr>
+            <td>Total One-Test-Per-Person :  </td> 
+            <td> <%= oneTestPerPeople %>  </td>
+        </tr>
+
+        <tr>
+            <td> Active Cases-Per-One-Million :  </td>
+             <td> <%= activePerOneMillion %>  </td>
+        </tr>
+
+        <tr>
+            <td>Total Recovered-Per-One-Million :  </td> 
+            <td><%=recoveredPerOneMillion  %> </td>
+        </tr>
+
+        <tr>
+            <td>Total Critical-Per-One-Million :  </td>
+            <td> <%= criticalPerOneMillion %>  </td>
+        </tr>
+
+    </table>
+
+    <!-- Historical Button -->
+
+    <form class="buttonClick" action="/history" method="post">
+        <button class="btn btn-warning btn-lg" type="submit">See Complete Case History</button>
+    </form>
+
+</body>
+</html>
