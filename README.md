@@ -14,8 +14,19 @@ The aim of the project #COVID-Info is to inform the user about the current and p
 * [Node.js](https://nodejs.org/en/) : Latest Version
 
 ## Installation
+1. In the top-right corner of the page, click Fork.
+2. On GitHub, navigate to your fork of the respective repository
+3. Above the list of files, click ↓ Code.
+4. 4. To clone the repository using HTTPS, under "Clone with HTTPS", copy the URL . To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then copy the URL . To clone a repository using GitHub CLI, click Use GitHub CLI, then copy the URL .
+5. Open Git Bash.
+6. Change the current working directory to the location where you want the cloned directory.
+7. Type git clone, and then paste the URL you copied earlier. It will look like this, with your GitHub username instead of YOUR-USERNAME
 ```
-$ git clone https://github.com/Aanchal116/COVID-Info
+   $ git clone https://github.com/YOUR-USERNAME/COVID-Info
+```
+8. Press Enter. Your local clone will be created.
+
+```
 $ cd ../path/to/the/file
 $ npm install
 $ npm start
