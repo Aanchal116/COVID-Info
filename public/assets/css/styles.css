@@ -1,0 +1,100 @@
+/* Home-Page */
+
+.home-body {
+    background-color: #E3DFC8;
+}
+
+.home-title {
+    padding-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.home-subtitle {
+    padding: 3% 0;
+    font-family: 'Merriweather', serif;
+}
+
+.countryTable {
+    padding : 0 0 5% 0;
+    background-color: white;
+}
+
+.home-table {
+    width: 60% !important;
+    text-align: center;
+    margin: auto;
+    border-color: #14B1AB;
+}
+
+.home-input {
+    border-style: none;
+}
+
+
+/* Country-Info Page */
+
+.country-body {
+    background-color: #DDFFBC;
+}
+
+.country-title {
+    padding-top: 3%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #99F3BD;
+}
+
+.flagImg {
+    padding: 3% 0;
+}
+
+.country-table {
+    width: 60% !important;
+    text-align: center;
+    margin: auto;
+    border-color: #FFEFA1;
+    background-color: white;
+}
+.country-btn {
+    padding: 3% 0;
+}
+
+/* History-Page */
+
+.history-body {
+    background-color: #F9F9F9;
+}
+
+.history-title {
+    padding-top: 5%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E4EFE7;
+}
+
+.history-subtitle {
+    width: 60%;
+    padding: 3% 0;
+    background-color: #CAF7E3;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+}
+
+.history-table {
+    width: 60% !important;
+    text-align: center;
+    margin: auto;
+    border-color: #7B6079;
+}
+
+.tableCases {
+    padding-bottom: 3%;
+}
+
+.tableDeaths , .tableRecoveries{
+    padding: 3% 0;
+}
+
+.history-form {
+    padding-bottom: 5%;
+}
